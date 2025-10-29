@@ -1,11 +1,11 @@
-#10/29/2025 Classwork
+# 10/29/2025 Classwork
 
-##Images
+## Images
 
-![Digital drawing](download.png)
-![Paper drawing](Photo at 10/29/2025 at 3.40 PM)
+! [Digital drawing](download.png)
+! [Paper drawing](Photo at 10/29/2025 at 3.40 PM)
 
-##Binary
+## Binary
 
 0A
 0A
