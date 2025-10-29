@@ -2,8 +2,8 @@
 
 ## Images
 
-! [Digital drawing](download.png)
-! [Paper drawing](Photo at 10/29/2025 at 3.40 PM)
+! [Digital drawing](../../Desktop/download.png)
+! [Paper drawing](../../Desktop/Photo at 10/29/2025 at 3.40 PM)
 
 ## Binary
 
