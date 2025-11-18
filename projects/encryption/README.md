@@ -18,10 +18,10 @@ and the messages that you received.
 
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-| KNWXY             FIRST                 5  
- GSPPICI   |        COLLEGE         |     | 22
-|AJPMOC             FOURTH    |            21      |     |
-|NWCZBP             FOURTH    |            18     |     |
+| KNWXY           | FIRST           | 5   |
+| GSPPICI         | COLLEGE         | 22  |
+| AJPMOC          | FOURTH          | 21  |
+| NWCZBP          | FOURTH          | 18  |
 
 
 ## Part 3: Connection to TCP/IP Model
@@ -63,7 +63,6 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     Data: 0111 1010
     =========
     Packet 3:
-
     Source: wood-26
     Destination: JexyYTGT
     Sequence: 3/3
