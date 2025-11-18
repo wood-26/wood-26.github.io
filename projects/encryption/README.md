@@ -65,9 +65,9 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     Packet 3:
 
     Source: wood-26
-    Destination: Jexy YTGT
+    Destination: JexyYTGT
     Sequence: 3/3
-    Data: 1101 1001
+    Data1110 1001
     =========
 
 ## Part 4: Reflection Questions
