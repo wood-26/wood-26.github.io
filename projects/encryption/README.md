@@ -41,6 +41,8 @@ m26lIi
 Using the ASCII table, convert these five characters to binary (if necessary,
 include leading zeroes so that each character is 8 bits): 
 6D32366C4969
+20+3+2+3+6+19+9+6+9
+101001110111101001110011101001
 ### Transport Layer: Break your message into packets
 
 Assume that each packet can hold two bytes. Fill in the packet information below with the binary values you computed above.
@@ -51,21 +53,21 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     Source: wood-26
     Destination: JexyYTGT  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: 1010 0111
     =========
     Packet 2:
 
     Source: wood-26
     Destination: JexyYTGT
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: 0111 1010
     =========
     Packet 3:
 
     Source: wood-26
     Destination: JexyYTGT
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: 1110 1001
     =========
 
 ## Part 4: Reflection Questions
