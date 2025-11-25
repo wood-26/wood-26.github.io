@@ -2,26 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Animal Exhibits</title>
+    <title>Zoo Overview</title>
     <script src="../js/init.js"></script>
-<style>
-table, th, tr, td{
-	border: 1px, solid black;
-	border-collapse: collapse;
-]
-body{
-	background-color: #abcdef;
-	color: green;
-}
-a{
-	color: darkgreen;
-}
-</style>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <h1 style="background-color: pink">Explore Our Animal Exhibits</h1>
-        <p>Meet the amazing animals that call our zoo home!</p>
+        <h1>Welcome to the City Zoo</h1>
+        <p id="animals">Explore the wonders of wildlife at the City Zoo!</p>
     </header>
     <nav>
         <ul>
@@ -31,32 +19,27 @@ a{
     </nav>
     <main>
         <section>
-            <h2>Animal Exhibits</h2>
-            <p>Our exhibits showcase animals from different regions of the world. Take a look at the details:</p>
+            <h2>Zoo Information</h2>
+            <p id="info">Our zoo is home to hundreds of animals from all over the world. Here's a quick guide to help you plan your visit:</p>
             <table>
-                <caption>Featured Exhibits</caption>
+                <caption class="highlight">Zoo Hours and Admission</caption>
                 <thead>
                     <tr>
-                        <th>Exhibit</th>
-                        <th>Region</th>
-                        <th>Animals</th>
+                        <th>Day</th>
+                        <th>Hours</th>
+                        <th>Admission</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Jungle Trek</td>
-                        <td>Amazon Rainforest</td>
-                        <td>Tigers, Parrots, Monkeys</td>
+                        <td class="highlight">Monday - Friday</td>
+                        <td>9:00 AM - 6:00 PM</td>
+                        <td>$15</td>
                     </tr>
                     <tr>
-                        <td>Savannah Safari</td>
-                        <td>African Savannah</td>
-                        <td>Lions, Giraffes, Elephants</td>
-                    </tr>
-                    <tr>
-                        <td>Arctic Wonders</td>
-                        <td>Polar Regions</td>
-                        <td>Polar Bears, Penguins</td>
+                        <td>Saturday - Sunday</td>
+                        <td>10:00 AM - 8:00 PM</td>
+                        <td>$20</td>
                     </tr>
                 </tbody>
             </table>
