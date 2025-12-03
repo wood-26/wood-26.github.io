@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Who wants ice cream?</title>
+            <script src="../js/validate.js"></script>
+        </head>
+
+        <body>
+        <h1>Ice Cream HTML Form</h1>
+        <p>This is not an actual form.</h1>
+            <form action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                <legend>Name</legend>
+                What is your name?
+                <input type="text" name="yourname" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Email</legend>
+                What is your email address?
+                <input type="email" name"email" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Phone Number</legend>
+                What is your phone number? (Please type your answer without hyphens.)
+                <input type="text" name="phonenumber" pattern="[0-9]{10}" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Guests</legend>
+                How many people will you bring with you to the party?
+                <input type="text" name="number" pattern="[0-9]{10}" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Favorite Ice Cream Flavor</legend>
+                What is your favorite ice cream flavor?
+                <br>
+                <input type="radio" id="q1o1" name="q1o1">
+                <label for="radio">Vanilla</label>
+                <br>
+                <input type="radio" id="q1o2" name="q1o2">
+                <label for="radio2">Chocolate Chip</label>
+                <br>
+                <input type="radio" id="q1o3" name=q1o3">
+                <label for="radio">Strawberry</label>
+                <br>
+                <input type="radio" id="q1o4" name="q1o4">
+                <label for="radio">Other</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Toppings</legend>
+                What toppings do you like?
+                <br>
+                <input type="checkbox" id="q2o1" name="q2o1">
+                <label for="checkbox">Sprinkles</label>
+                <br>
+                <input type="checkbox" id="q2o2" name="q2o2">
+                <label for="checkbox">Magic Shell</label>
+                <br>
+                <input type="checkbox" id="q2o3" name="q2o2">
+                <label for="checkbox">Chocolate Chips</label>
+                <br>
+                <input type="checkbox" id="q2o4" name="q2o4">
+                <label for="checkbox">Gummy Bears</label>
+                <br>
+                <input type="checkbox" id="q2o5" name="q2o5">
+                <label for="checkbox">Other</label>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </body>
+</html>
