@@ -12,42 +12,46 @@
                 <fieldset>
                 <legend>Name</legend>
                 What is your name?
+                <br>
                 <input type="text" name="yourname" required>
                 </fieldset>
                 <br>
                 <fieldset>
                 <legend>Email</legend>
                 What is your email address?
+                <br>
                 <input type="email" name"email" required>
                 </fieldset>
                 <br>
                 <fieldset>
                 <legend>Phone Number</legend>
                 What is your phone number? (Please type your answer without hyphens.)
+                <br>
                 <input type="text" name="phonenumber" pattern="[0-9]{10}" required>
                 </fieldset>
                 <br>
                 <fieldset>
                 <legend>Guests</legend>
                 How many people will you bring with you to the party?
+                <br>
                 <input type="text" name="number" pattern="[0-9]{10}" required>
                 </fieldset>
                 <br>
                 <fieldset>
                 <legend>Favorite Ice Cream Flavor</legend>
                 What is your favorite ice cream flavor?
-                <br>
-                <input type="radio" id="q1o1" name="q1o1">
-                <label for="radio">Vanilla</label>
-                <br>
-                <input type="radio" id="q1o2" name="q1o2">
-                <label for="radio2">Chocolate Chip</label>
-                <br>
-                <input type="radio" id="q1o3" name=q1o3">
-                <label for="radio">Strawberry</label>
-                <br>
-                <input type="radio" id="q1o4" name="q1o4">
-                <label for="radio">Other</label>
+                    <br>
+                    <input type="radio" id="q1o1" name="flavor">
+                    <label for="q1o1">Vanilla</label>
+                    <br>
+                    <input type="radio" id="q1o2" name="flavor">
+                    <label for="q1o2">Chocolate Chip</label>
+                    <br>
+                    <input type="radio" id="q1o3" name="flavor">
+                    <label for="q1o3">Strawberry</label>
+                    <br>
+                    <input type="radio" id="q1o4" name="flavor">
+                    <label for="q1o4">Other</label>
                 </fieldset>
                 <br>
                 <fieldset>
@@ -68,6 +72,29 @@
                 <br>
                 <input type="checkbox" id="q2o5" name="q2o5">
                 <label for="checkbox">Other</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Entertainment</legend>
+                What kind of entertainment should we have at the party?
+                <br>
+                <select id="entertainment" name="entertainment">
+                    <option value="balloon-animals">Balloon Animals</label>
+                    <option value="bounce-house">Bounce House</label>
+                    <option value="clown">Clown</label>
+                    <option value="cornhole">Cornhole</label>
+                    <option value="dj">DJ</label>
+                    <option value="face-painting">Face Painting</label>
+                    <option value="farfalle">Magician</label> 
+                </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                <legend>Suggestions or Comments</legend>
+                Do you have any other suggestions or comments?
+                <br>
+                <input type="text" id="q4" name="q4">
+                <br>
                 </fieldset>
                 <br>
                 <button type="submit">Submit</button>
