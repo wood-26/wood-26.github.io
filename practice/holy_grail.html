@@ -11,6 +11,7 @@
                 'menu main place' 1fr
                 'foot foot foot' 100px
                 /200px 1fr 200px;
+            grid-gap: 10px;
         }
         #header{
             grid-area: head;
@@ -20,8 +21,6 @@
             text-align: center;
             font-size: 24px;
             color: white;
-            gap: 10px;
-            HEAD
         }
         #body{
             grid-area: menu;
@@ -31,8 +30,6 @@
             text-align: center;
             font-size: 24px;
             color: white;
-            gap: 10px;
-            MENU
         }
         #body2{
             grid-area: main;
@@ -42,8 +39,7 @@
             text-align: center;
             font-size: 24px;
             color: white;
-            gap: 10px;
-            MAIN
+            
         }
         #body3{
             grid-area: place;
@@ -53,8 +49,6 @@
             text-align: center;
             font-size: 24px;
             color: white;
-            gap: 10px;
-            MENU
         }
         #foot{
             grid-area: foot;
@@ -64,18 +58,16 @@
             text-align: center;
             font-size: 24px;
             color: white;
-            gap: 10px;
-            FOOT
         }
         </style>
     </head>
     <body>
         <div class="grid">
-            <div id="header"></div>
-            <div id="body"></div>
-            <div id="body2"></div>
-            <div id="body3"></div>
-            <div id="foot"></div>
+            <div id="header">Header</div>
+            <div id="body">Body</div>
+            <div id="body2">Body 2</div>
+            <div id="body3">Body 3</div>
+            <div id="foot">Foot</div>
         </div>
     </body>
 </html>
