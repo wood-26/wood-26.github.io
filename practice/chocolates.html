@@ -23,7 +23,7 @@
               border: 8px solid red;
             }
             .heart {
-              height: 20vh; /* adjust to control the size */
+              height: 10vh; /* adjust to control the size */
               aspect-ratio: 1;
               --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
               -webkit-mask-box-image: var(--_m);
@@ -65,7 +65,7 @@
                 font-size: 2em;
             }
             #YellowStar{
-                 width: 20vh;
+                 width: 10vh;
                  aspect-ratio: 1;
                  background: #F8CA00;
                  clip-path: polygon(50% 0,
@@ -76,18 +76,31 @@
                  );
             }
            .hexagon{
-                height: 20vh; /* adjust to control the size  */
+                height: 10vh; /* adjust to control the size  */
                 aspect-ratio: 1/cos(30deg);
                 clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
                 background: #3B8686;
            }
            /* HTML: <div class="rhombus"></div> */
            .rhombus {
-                height: 30vh; /* adjust to control the size  */
+                height: 10vh; /* adjust to control the size  */
                 aspect-ratio: 1;
                 clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
                 background: #88A65E;
            }
+          /* HTML: <div class="octagon"></div> */
+           .octagon {
+               width: 10vh;
+               aspect-ratio: 1;
+               --o:calc(50%*tan(-22.5deg));
+               clip-path: polygon(
+                   var(--o) 50%,
+                   50% var(--o),
+                   calc(100% - var(--o)) 50%,
+                   50% calc(100% - var(--o))
+  );
+  background: #3B8686;
+}
         </style>
     </head>
     <body>
@@ -100,14 +113,12 @@
                 </div>
                 <!-- TODO: Add some more divs here, and style them
                     to fill in the 'lilbits' part of the chocolate box -->
-            <div class="star" id="YellowStar">
-            </div>
-            <div class="hexagon" id="hexagon">
-            </div>
-            </div>
+            <div class="star" id="YellowStar"></div>
+            <div class="hexagon" id="hexagon"></div>
             <div class="rhombus" id="rhombus"></div>
             <!-- TODO: Add some more divs here, and style them
                 to fill in the other sections of the chocolate box -->
-        </div>
+            <div class="octagon"></div>
+            </div>
     </body>
 </html> 
