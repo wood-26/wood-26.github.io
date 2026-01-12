@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Amaria's</title>
+        <script src="../js/validate.js"></script>
+        <style>
+        .grid{
+            display: grid;
+            height: 100vh;
+            grid:
+                'head head' 1fr
+                'card1 card2' 1fr
+                'body body' 1fr
+                'foot foot' 100px
+                /1fr 1fr;
+                grid-gap: 10px;
+        }
+        #head{
+            grid-area: head;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            text-align: center;
+            color: white;
+        }
+        #card1{
+            grid-area: card1;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            text-align: center;
+            color: white;
+        }
+        #card2{
+            grid-area: card2;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            text-align: center;
+            color: white;
+        }
+        #body{
+            grid-area: body;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            text-align: right;
+            color: white;
+        }
+        #foot{
+            grid-area: foot;
+            width: 100%;
+            height: 100%;
+            background-color: green;
+            text-align: center;
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div id="head">
+                <h1>amaria's</h1>
+                <h2>Habesha Vintage Store</h2>
+                <h3>Curated Ethiopian heritage pieces</h3>
+                <a href="file:///Users/1010615/Desktop/website/projects/client/amarias2.html">Jewelry</a>
+                <a href="file:///Users/1010615/Desktop/website/projects/client/amarias3.html">- Garments</a>
+                <a href="file:///Users/1010615/Desktop/website/projects/client/amarias4.html">- Stories</a>
+                <br>
+                <a href="file:///Users/1010615/Desktop/website/projects/client/amarias5.html">
+                    <button type="button">Enter the Full Collection</button>
+                </a> 
+            </div>
+            <div id="card1">
+                <h3>Jewelry</h3>
+            </div>
+            <div id="card2">
+                <h3>Garments</h3>
+            </div>
+            <div id="body">
+                <h3>Stories</h3>
+            </div>
+            <div id="foot">
+
+            </div>
+        </div>    
+    </body>
+</html>
