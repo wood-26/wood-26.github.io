@@ -17,7 +17,26 @@ on January 10th, I met with my clients. They wanted a habesha clothing and jewel
         * full collection page
         * potential product and purchase pages (not discussed)
 
-We also had a layout for the five pages:
+We also had a layout for the five pages, which we made in Excalidraw.
+
+### Day 2 (January 11, 2026)
+
+The code was edited. See the GitHub commits for more information.
+
+### Day 3 (January 12, 2026)
+
+There was no Day 2 because there was too little information to mention.
+
+Main Ideas:
+
+On January 12th, I met with my clients again. We discussed these topics:
+    
+        * color of the website
+        * fonts
+        * any more additions
+        * and more
+
+The color was changed. I ran into an ongoing problem about the color.
 
 
 
