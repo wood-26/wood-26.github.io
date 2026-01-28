@@ -41,3 +41,21 @@ The color was changed. I ran into an ongoing problem about the color.
 
 
 We did not discuss color. The text and the images would be added later.
+
+### Last Day (January 28th, 2026)
+
+There was at least one more meeting that we had that discussed features of the website.
+
+The website is now complete, except for credits.
+
+Credits could be added after the 3PM deadline.
+
+We discussed:
+    
+    * errors with the website
+    * fonts
+    * the images being in the right places
+
+The images and the website pages at a specific stage are in the media file.
+
+If you see the commit before the submission, you might see two credits in the Jewelry page.
