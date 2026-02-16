@@ -13,13 +13,14 @@
     <script>
     const canvas = document.getElementById("canvas");
     const ctx = canvas.getContext("2d");
-    
+    //background
     ctx.fillStyle="blue";
     ctx.fillRect(0,0,800,800);
 
     ctx.fillStyle="green";
     ctx.fillRect(0,400,800,800);
     //body
+    ctx.fillStyle = "black";
     ctx.beginPath();
     ctx.ellipse(
         400,700,
@@ -43,7 +44,7 @@
     ctx.beginPath();
     ctx.arc(500,400,25,0,2*Math.PI);
     ctx.fill();
-
+4
     ctx.fillStyle = "brown";
     ctx.strokeStyle = "brown";
     ctx.beginPath();
@@ -91,6 +92,17 @@
     ctx.arc(400,435,50,0,Math.PI
         );
     ctx.fill();
+
+    ctx.fillStyle = "black";
+    ctx.beginPath();
+    ctx.ellipse(
+        320,360,
+        10,50,
+        Math.PI,
+        0,
+        2*Math.PI
+        );
+    ctx.fill();
     //hair
     ctx.fillStyle = "black";
     ctx.beginPath();
@@ -102,17 +114,6 @@
         2*Math.PI
         );
     ctx.fill();
-
-    ctx.beginPath();
-    ctx.ellipse(
-        320,360,
-        10,50,
-        Math.PI,
-        0,
-        2*Math.PI
-        );
-    ctx.fill();
-    
     ctx.beginPath();
     ctx.ellipse(
         480,360,
@@ -122,6 +123,58 @@
         2*Math.PI
         );
     ctx.fill();
+    //clouds
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.ellipse(
+        100,100,
+        100,30,
+        Math.PI,
+        0,
+        2*Math.PI
+        );
+    ctx.fill();
+    
+    ctx.ellipse(
+        150,50,
+        100,30,
+        Math.PI,
+        0,
+        2*Math.PI,
+        );
+    ctx.fill();
+   //sun 
+    ctx.fillStyle = "yellow";
+    ctx.beginPath();
+    ctx.ellipse(
+        700,100,
+        50,50,
+        Math.PI,
+        0,
+        2*Math.PI,
+        );
+    ctx.fill();
+   ctx.beginPath();
+    ctx.moveTo(700,100);
+    ctx.lineTo(600,200);
+    ctx.fill();
+    //tree 
+    ctx.fillStyle = "darkGreen";
+    ctx.beginPath();
+    ctx.moveTo(700,200);
+    ctx.lineTo(600,300);
+    ctx.lineTo(800,300);
+    ctx.fill();
+    ctx.moveTo(700,300);
+    ctx.lineTo(600,400);
+    ctx.lineTo(800,400);
+    ctx.fill();
+    ctx.moveTo(700,400);
+    ctx.lineTo(600,500);
+    ctx.lineTo(800,500);
+    ctx.fill();
+    ctx.fillStyle = "brown";
+    ctx.fillRect(650,500,100,300);
     </script>
     </body>
 </html>
