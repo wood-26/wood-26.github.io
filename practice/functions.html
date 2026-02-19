@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Functions</title>
+    </head>
+    <body>
+        <h1>Here Be Functions</h1>
+        <canvas id="canvas" width="800" height="800">
+        </canvas>
+        <script>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        //this returns nothing
+        //instead, it goes and interacts with the browser
+        //"function robot"
+        console.log("test"); //calling or extracting
+        //defining a function
+        function sayHi(){
+            console.log("Hi");
+        }
+        //call/execute the function
+        sayHi();
+        sayHi();
+        //functions can take parameters
+        //just like f(x)
+        function sayHiToSomeone(who){
+            console.log("Hi "+who);
+        }
+        //call the function
+        sayHiToSomeone("Chris");
+        sayHiToSomeone("Micah");
+        //functions can have many parameters
+        //g(x,y) 
+        function drawCircle(x,y){
+            ctx.beginPath();
+            ctx.fillStyle = "red";
+            ctx.arc(x,y,20,0,2*Math.PI);
+            ctx.fill();
+        }
+        drawCircle(30,30);
+        drawCircle(40,40);
+        drawCircle(50,50);
+        drawCircle(60,60);
+        drawCircle(70,70);
+        </script>
+    </body>
+</html>
