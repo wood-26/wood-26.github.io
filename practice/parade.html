@@ -16,6 +16,8 @@
             let x = 1;
             let x2 = 1;
             let x3 = 1;
+            let x4 = 2;
+            let x5 = 3;
             let speed = 5;
             let time = 0;
             function animate(){
@@ -41,6 +43,12 @@
                 if (time > 150) {
                     x3 = x3 + speed;
                 }
+                if (time > 140) {
+                    x4 = x4 + speed;
+                }
+                if (time > 130) {
+                    x5 = x5 + speed;
+                }
                 // clear
                 ctx.clearRect(0,0,800,800);
                 // draw
@@ -50,6 +58,10 @@
                 ctx.fillRect(x2,50,10,10);
                 ctx.fillStyle = "yellow";
                 ctx.fillRect(x3,20,10,10);
+                ctx.fillStyle = "orange";
+                ctx.fillRect(x4,30,10,10);
+                ctx.fillStyle = "blue";
+                ctx.fillRect(x5,40,10,10);
                 // animate again
                 requestAnimationFrame(animate);
             }
