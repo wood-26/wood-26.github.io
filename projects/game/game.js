@@ -34,15 +34,15 @@ function hallwayATwo() {
             stayHere();
             waitThenCall(hallwayATwo);
         }
-    waitForInput(processInput);
     }
+    waitForInput(processInput);
 }
 function clothingStore(){
     clear();
     print("\nYou enter the busy clothing store. You do not see the person in the store.");
     print("\nWhere do you want to go next? Say one of these choices:" + "\n\thallway b1");
     function processInput(input){
-        if (input.toLowerCase() === "hallway b"){
+        if (input.toLowerCase() === "hallway b1"){
             hallwayBOne();
         }
         else {
@@ -50,8 +50,8 @@ function clothingStore(){
             waitThenCall(clothingStore);
         timeCount=timeCount-1;
         }
-    waitForInput(processInput);
     }
+    waitForInput(processInput);
 }
 function jewelryStore(){
     clear();
@@ -67,8 +67,8 @@ function jewelryStore(){
             waitThenCall(jewelryStore);
         timeCount=timeCount-1;
         }
-    waitForInput(processInput);
     }
+    waitForInput(processInput);
 }
 function hallwayBOne() {
     clear();
@@ -87,8 +87,8 @@ function hallwayBOne() {
             waitThenCall(hallwayBOne);
         timeCount=timeCount-1;
         }
-    waitForInput(processInput);
     }
+    waitForInput(processInput);
 }
 
 
@@ -107,8 +107,8 @@ function bookStore(){
             waitThenCall(bookStore);
         timeCount=timeCount-1;
         }
-    waitForInput(processInput);
     }
+    waitForInput(processInput);
 }
 function hallwayAOne(){
     clear();
@@ -124,8 +124,8 @@ function hallwayAOne(){
             waitThenCall(hallwayAOne);
         timeCount=timeCount-1;
         }
-    waitForInput(processInput);
     }
+    waitForInput(processInput);
 }
 
 function secondFloor() {
@@ -142,8 +142,8 @@ function secondFloor() {
             waitThenCall(secondFloor);
         timeCount=timeCount-1;
         }
-    waitForInput(processInput);
-    }           
+    }
+    waitForInput(processInput);           
 }
 function firstFloor() {
     clear();
@@ -174,6 +174,7 @@ function firstFloor() {
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
+    print("You are in a mall, trying to find someone. Go through the stores to try and find them.");
     print("Welcome to my game! Press any key to get off the bus");
 
     function processInput(input){
