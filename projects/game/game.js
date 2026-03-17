@@ -68,10 +68,27 @@ function hallwayAOne(){
     }
 }
 
+function bookStore(){
+    clear();
+    print("\nYou enter the quiet book store. You do not see the person in the store.");
+    print("\nWhere do you want to go next? Say one of these choices:" + "\n\thallway b1");
+
+    function processInput(input){
+        if (input.toLowerCase() === "hallway b1"){
+            hallwayBOne();
+        }
+        else{
+            stayHere();
+            waitThenCall(bookStore);
+        timeCount=timeCount-1;
+        }
+    waitForInput(processInput);
+    }
+}
 function clothingStore(){
     clear();
     print("\nYou enter the busy clothing store. You do not see the person in the store.");
-    print("\nWhere do you want to go next? Say one of these choices:" + "\n\thallway b");
+    print("\nWhere do you want to go next? Say one of these choices:" + "\n\thallway b1");
     function processInput(input){
         if (input.toLowerCase() === "hallway b"){
             hallwayBOne();
