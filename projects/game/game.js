@@ -8,79 +8,31 @@ let timeCount = 30;
 
 
 //Make one function for each location
-function firstFloor() {
+function timeStop(){
     clear();
-    print("\nYou are in the first floor!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\thallway a1" + "\n\thallway b" + "\n\tSecond Floor");
-   
-    function processInput(input){
-        if (input.toLowerCase() === "hallway a1") {
-            hallwayAOne();
-        }
-        else if (input.toLowerCase() === "hallway b") {
-            hallwayBOne(); }
-        else if (input.toLowerCase() === "second floor") {
-            secondFloor();
-        }
-        else {
-            stayHere();
-            waitThenCall(firstFloor);
-        timeCount=timeCount-1;
-        }
-    }
-    waitForInput(processInput);
-}
-
-function secondFloor() {
-    clear();
-    print("\nYou are in the second floor!");
-    print("\nWhere do you want to go next? Say one of these choices:" + "\n\tHallway A2");
-
-    function processInput(input){
-        if (input.toLowerCase() === "hallway a2") {
-            hallwayATwo();
-        }
-        else {
-            stayHere();
-            waitThenCall(secondFloor);
-        timeCount=timeCount-1;
-        }
-    waitForInput(processInput);
+    if (timeCount = 0){
+        print("You did not make it in time to see the person.");
     }
 }
 
-function hallwayAOne(){
+function movieTheater() {
     clear();
-    print("\nYou are in Hallway A!");
-    print("\nWhere do you want to go next? Say one of these choices:" + "\n\tBook Store");
+    print("\nYou find the person in the movie theater.");
+}
+
+function hallwayATwo() {
+    clear();
+    print("\nYou are in Hallway A2!");
+    print("\nWhere do you want to go next? Say one of these choices:" + "\nmovie theater");
     
     function processInput(input){
-        if (input.toLowerCase() === "book store"){
-            bookStore();
+        if (input.toLowerCase() === "movie theater"){
+            movieTheater();
+        timeCount=timeCount-1;
         }
         else{
             stayHere();
-            waitThenCall(hallwayAOne);
-        timeCount=timeCount-1;
-        }
-    waitForInput(processInput);
-    }
-}
-
-function bookStore(){
-    clear();
-    print("\nYou enter the quiet book store. You do not see the person in the store.");
-    print("\nWhere do you want to go next? Say one of these choices:" + "\n\thallway b1");
-
-    function processInput(input){
-        if (input.toLowerCase() === "hallway b1"){
-            hallwayBOne();
-        }
-        else{
-            stayHere();
-            waitThenCall(bookStore);
-        timeCount=timeCount-1;
+            waitThenCall(hallwayATwo);
         }
     waitForInput(processInput);
     }
@@ -139,36 +91,85 @@ function hallwayBOne() {
     }
 }
 
-function movieTheater() {
-    clear();
-    print("\nYou find the person in the movie theater.");
-}
 
-function hallwayATwo() {
+
+function bookStore(){
     clear();
-    print("\nYou are in Hallway A2!");
-    print("\nWhere do you want to go next? Say one of these choices:" + "\nmovie theater");
-    
+    print("\nYou enter the quiet book store. You do not see the person in the store.");
+    print("\nWhere do you want to go next? Say one of these choices:" + "\n\thallway b1");
+
     function processInput(input){
-        if (input.toLowerCase() === "movie theater"){
-            movieTheater();
-        timeCount=timeCount-1;
+        if (input.toLowerCase() === "hallway b1"){
+            hallwayBOne();
         }
         else{
             stayHere();
-            waitThenCall(hallwayATwo);
+            waitThenCall(bookStore);
+        timeCount=timeCount-1;
+        }
+    waitForInput(processInput);
+    }
+}
+function hallwayAOne(){
+    clear();
+    print("\nYou are in Hallway A!");
+    print("\nWhere do you want to go next? Say one of these choices:" + "\n\tBook Store");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "book store"){
+            bookStore();
+        }
+        else{
+            stayHere();
+            waitThenCall(hallwayAOne);
+        timeCount=timeCount-1;
         }
     waitForInput(processInput);
     }
 }
 
-function timeStop() {
+function secondFloor() {
     clear();
-    
-    if (timeCount === 0){
-        print("You did not meet the person in time.");
-    }
+    print("\nYou are in the second floor!");
+    print("\nWhere do you want to go next? Say one of these choices:" + "\n\tHallway A2");
+
+    function processInput(input){
+        if (input.toLowerCase() === "hallway a2") {
+            hallwayATwo();
+        }
+        else {
+            stayHere();
+            waitThenCall(secondFloor);
+        timeCount=timeCount-1;
+        }
+    waitForInput(processInput);
+    }           
 }
+function firstFloor() {
+    clear();
+    print("\nYou are in the first floor!");
+    print("\nWhere do you want to go next? Say one of these choices:" +
+        "\n\thallway a1" + "\n\thallway b" + "\n\tSecond Floor");
+
+    function processInput(input){
+        if (input.toLowerCase() === "hallway a1") {
+            hallwayAOne();
+        }
+        else if (input.toLowerCase() === "hallway b") {
+            hallwayBOne(); }
+        else if (input.toLowerCase() === "second floor") {
+            secondFloor();
+        }
+        else {
+            stayHere();
+            waitThenCall(firstFloor);
+        timeCount=timeCount-1;
+        }
+    }
+    waitForInput(processInput);
+}
+
+
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
 //to locationA
