@@ -37,3 +37,11 @@ canvas = document.getElementById("canvas4");
 ctx = canvas.getContext("2d");
 
 //fill in code for canvas4 here
+
+for (let y=0; y<=800; y+=100){
+for (let x=0; x<=800; x+=200){
+    if (y!=x){
+    ctx.fillRect(x,y,100,100);
+    }
+}
+}
