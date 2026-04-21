@@ -44,7 +44,7 @@
     ctx.beginPath();
     ctx.arc(500,400,25,0,2*Math.PI);
     ctx.fill();
-4
+
     ctx.fillStyle = "brown";
     ctx.strokeStyle = "brown";
     ctx.beginPath();
@@ -143,7 +143,27 @@
         2*Math.PI,
         );
     ctx.fill();
-   //sun 
+
+    ctx.fillStyle = "white";
+    ctx.beginPath();
+    ctx.ellipse(
+        400,100,
+        100,30,
+        Math.PI,
+        0,
+        2*Math.PI,
+        );
+    ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(
+        500,50,
+        100,30,
+        Math.PI,
+        0,
+        2*Math.PI,
+        );
+    ctx.fill();
+    //sun 
     ctx.fillStyle = "yellow";
     ctx.beginPath();
     ctx.ellipse(
@@ -154,10 +174,7 @@
         2*Math.PI,
         );
     ctx.fill();
-   ctx.beginPath();
-    ctx.moveTo(700,100);
-    ctx.lineTo(600,200);
-    ctx.fill();
+
     //tree 
     ctx.fillStyle = "darkGreen";
     ctx.beginPath();

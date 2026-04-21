@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Cool Recipes: Shiro</title>
-<script>src="../../js/validate.js"</script>
-</head>
-<body>
-<h1>Shiro</h1>
-<h2>Description</h2>
-<p>Shiro is a food that goes on a bread called injera. It has spices in it, although one might say it is not extremely spicy.</p>
-<h2>What You Will Need</h2>
-<ul>shiro powder</ul>
-<ul>water</ul>
-<h2>Directions</h2>
-<ol>Firstly, fill the pan with water so that it is almost full.</ol>
-<ol>Secondly, heat up the pan on a stovetop on low heat.</ol>
-<ol>Thirdly, when the water is hot, put shiro powder in it.</ol>
-<ol>Fourthly, mix the shiro powder with the water while it is cooking.</ol>
-<ol>Fifthly, when it finishes cooking, it should behave mostly like a liquid. It could be a little thick. When that happens, that means you have finished making the shiro.</ol>
-</body>
+    <head>
+        <title>Senai</title>
+        <script>src="../../js/validate.js"</script>
+        <style>
+        .grid{
+            display: grid;
+            height: 100vh;
+            grid:
+                'head head' 1fr
+                'body body' 1fr
+                'foot foot' 1fr
+                /1fr 1fr;
+                grid-gap: 10px;
+                font-size: 24px;
+            color: Burlywood;
+        }
+        #head{
+            grid-area: head;
+            width: 100%;
+            height: 100%;
+            background-color: Burlywood;
+            color: black;
+        }
+        #body{
+            grid-area: body;
+            width: 100%;
+            height: 100%;
+            background-color: Burlywood;
+            color: black;
+        }
+        #foot{
+            grid-area: foot;
+            width: 100%;
+            height: 100%;
+            background-color: Burlywood;
+            color: black;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <h1>Senai</h1>
+            <h1 style="text-align:center">What I've Done so Far</h1>
+        </div>
+        <div id="body">
+            <h2>So far I have..</h2>
+            <ul> 
+                <li>volunteered</li>
+                <li>become a member of four clubs at school</li>
+                <li>been enrolled in all the Intensified classes available and a Dual Enrollment class in my freshman year of high school</li>
+                <li>had previous volunteer hours in middle school</li>
+            </ul>
+            <p>The places that I have volunteered in include Phoenix Bikes in 7th to 9th grade and Aspire Afterschool Learning in 9th grade. 
+            I have struggled in the classes I have taken, and my grades have deplted since my 8th grade year. 
+            I did not take any Intensified classes that year.</p>
+        </div>
+        <div id="foot">
+        
+        </div>
+    </body>
 </html>
