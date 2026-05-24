@@ -13,7 +13,7 @@ function clickHandler(e){
         && mouseY > junk_min_y
         && mouseY < junk_max_y){
         j.alive = false;
-    }
+   }
   }
 }
 
@@ -55,4 +55,3 @@ function checkCollisions(){
             }
         }
     }
-}
