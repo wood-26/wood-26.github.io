@@ -8,11 +8,11 @@
             display: grid;
             height: 100vh;
             grid:
-                'head head' 1fr
-                'body body' 1fr
-                'body2 body2' 1fr
-                'foot foot' 100px
-                /1fr 1fr;
+                'fill1 head head fill2' 1fr
+                'fill1 body body fill2' 1fr
+                'fill1 body2 body2 fill2' 1fr
+                'fill1 foot foot fill2' 100px
+                /0.5fr 1fr 1fr 0.5fr;
                 grid-gap: 10px;
                 font-size: 24px;
             color: PaleGoldenrod;
@@ -40,6 +40,22 @@
         }
         #foot{
             grid-area: foot;
+            width: 100%;
+            height: 100%;
+            background-color: PaleGoldenrod;
+            color: black;
+            text-align: center;
+        }
+        #fill1{
+            grid-area: fill1;
+            width: 100%;
+            height: 100%;
+            background-color: PaleGoldenrod;
+            color: black;
+            text-align: center;
+        }
+        #fill2{
+            grid-area: fill2;
             width: 100%;
             height: 100%;
             background-color: PaleGoldenrod;
@@ -87,6 +103,12 @@
         <div id="foot">
             <a href="https://wood-26.github.io/index.html">Home -</a>
             <a href="https://wood-26.github.io/2.html"> Projects</a>        
+        </div>
+        <div id="fill1">
+        
+        </div>
+        <div id="fill2">
+            
         </div>
     </body>
 </html>
